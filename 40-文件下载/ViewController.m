@@ -7,16 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "FileDownload.h"
 
 @interface ViewController ()
 
+@property(nonatomic,strong) FileDownload *fileDownload;
 @end
 
 @implementation ViewController
+
+
+-(FileDownload *)fileDownload{
+    if(_fileDownload== nil){
+        _fileDownload = [[FileDownload alloc] init];
+    
+    }
+    return  _fileDownload;
+}
             
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.fileDownload downloafFileWithURL:[NSURL URLWithString:@"http://127.0.0.1/157612315-7d52a251ac7a6533.jpg"]];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,6 +13,7 @@
 		04CB39861A07C7500028FE26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CB39841A07C7500028FE26 /* Main.storyboard */; };
 		04CB39881A07C7500028FE26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CB39871A07C7500028FE26 /* Images.xcassets */; };
 		04CB39941A07C7500028FE26 /* _0_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB39931A07C7500028FE26 /* _0_____Tests.m */; };
+		04CB39A01A07C7A30028FE26 /* FileDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB399F1A07C7A30028FE26 /* FileDownload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		04CB398D1A07C7500028FE26 /* 40-文件下载Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "40-文件下载Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CB39921A07C7500028FE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CB39931A07C7500028FE26 /* _0_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_0_____Tests.m"; sourceTree = "<group>"; };
+		04CB399E1A07C7A30028FE26 /* FileDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownload.h; sourceTree = "<group>"; };
+		04CB399F1A07C7A30028FE26 /* FileDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownload.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 				04CB39821A07C7500028FE26 /* ViewController.m */,
 				04CB39841A07C7500028FE26 /* Main.storyboard */,
 				04CB39871A07C7500028FE26 /* Images.xcassets */,
+				04CB399D1A07C7800028FE26 /* Tool */,
 				04CB397A1A07C7500028FE26 /* Supporting Files */,
 			);
 			path = "40-文件下载";
@@ -114,6 +118,15 @@
 				04CB39921A07C7500028FE26 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04CB399D1A07C7800028FE26 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				04CB399E1A07C7A30028FE26 /* FileDownload.h */,
+				04CB399F1A07C7A30028FE26 /* FileDownload.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CB39831A07C7500028FE26 /* ViewController.m in Sources */,
+				04CB39A01A07C7A30028FE26 /* FileDownload.m in Sources */,
 				04CB39801A07C7500028FE26 /* AppDelegate.m in Sources */,
 				04CB397D1A07C7500028FE26 /* main.m in Sources */,
 			);
