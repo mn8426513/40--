@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "FileDownload.h"
 
+
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property(nonatomic,strong) FileDownload *fileDownload;
 @end
 
@@ -27,7 +29,11 @@
             
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.fileDownload downloafFileWithURL:[NSURL URLWithString:@"http://127.0.0.1/157612315-7d52a251ac7a6533.jpg"]];
+    
+    [self.fileDownload downloafFileWithURL:[NSURL URLWithString:@"http://127.0.0.1/xiaohan.png"] completion:^(UIImage *image){
+        self.imageView.image = image;
+    }];
+    
     
 }
 

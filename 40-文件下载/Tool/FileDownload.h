@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FileDownload : NSObject
+@property (nonatomic,copy) NSString *cachePath;
 
-- (void)downloafFileWithURL:(NSURL*)URL;
+- (void)downloafFileWithURL:(NSURL*)URL completion:(void(^)(UIImage *image))completion;
 
 @end

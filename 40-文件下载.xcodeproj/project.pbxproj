@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046A2BB61A0BACD100DDD11C /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A2BB51A0BACD100DDD11C /* NSString+Password.m */; };
 		04CB397D1A07C7500028FE26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB397C1A07C7500028FE26 /* main.m */; };
 		04CB39801A07C7500028FE26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB397F1A07C7500028FE26 /* AppDelegate.m */; };
 		04CB39831A07C7500028FE26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB39821A07C7500028FE26 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046A2BB41A0BACD100DDD11C /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		046A2BB51A0BACD100DDD11C /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
 		04CB39771A07C7500028FE26 /* 40-文件下载.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "40-文件下载.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CB397B1A07C7500028FE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CB397C1A07C7500028FE26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046A2BB71A0BACD700DDD11C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				046A2BB41A0BACD100DDD11C /* NSString+Password.h */,
+				046A2BB51A0BACD100DDD11C /* NSString+Password.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		04CB396E1A07C7500028FE26 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 		04CB39791A07C7500028FE26 /* 40-文件下载 */ = {
 			isa = PBXGroup;
 			children = (
+				046A2BB71A0BACD700DDD11C /* Tool */,
 				04CB397E1A07C7500028FE26 /* AppDelegate.h */,
 				04CB397F1A07C7500028FE26 /* AppDelegate.m */,
 				04CB39811A07C7500028FE26 /* ViewController.h */,
@@ -230,6 +243,7 @@
 			files = (
 				04CB39831A07C7500028FE26 /* ViewController.m in Sources */,
 				04CB39A01A07C7A30028FE26 /* FileDownload.m in Sources */,
+				046A2BB61A0BACD100DDD11C /* NSString+Password.m in Sources */,
 				04CB39801A07C7500028FE26 /* AppDelegate.m in Sources */,
 				04CB397D1A07C7500028FE26 /* main.m in Sources */,
 			);
@@ -347,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "40-文件下载/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "40-文件下载/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +432,7 @@
 				04CB39991A07C7500028FE26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04CB399A1A07C7500028FE26 /* Build configuration list for PBXNativeTarget "40-文件下载Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +441,7 @@
 				04CB399C1A07C7500028FE26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
